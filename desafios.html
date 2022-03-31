@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafios HTML</title>
+    <meta
+      name="description"
+      content="Página criada com base nos desafios de HTML propostos pela Rocketseat, no programa Discover. Autora: Bibiana Falkenbach."
+    />
+  </head>
+  <body>
+    <header>
+      <figure>
+        <img
+          src="/images/html5-700x329-min.jpeg"
+          alt="Símbolo do HTML5"
+          width="580"
+          height="280"
+        />
+      </figure>
+      <h1>Desafios HTML - Discover Rocketseat</h1>
+    </header>
+
+    <main>
+      <div class="descricao">
+        <p>
+          Nessa página, reuni os
+          <a
+            href="https://app.rocketseat.com.br/discover/challenges/html-challenge"
+            target="_blank"
+            >desafios HTML</a
+          >
+          propostos pela Rocketseat no programa Discover.
+        </p>
+        <p>
+          Procurei utilizar boas práticas, fazendo um código limpo, funcional e
+          acessível.
+        </p>
+        <p>
+          São exercícios simples, com o objetivo de treinar as habilidades em
+          HTML puro.
+        </p>
+        <p>Caso queira me contatar:</p>
+        <address>
+          <a href="mailto:falkenbachbibiana@gmail.com"
+            >falkenbachbibiana@gmail.com</a
+          ><br />
+        </address>
+
+        <br />
+
+        <p><strong>Selecione o desafio aqui:</strong></p>
+      </div>
+      <nav id="desafios">
+        <ol>
+          <li class="desafios_glossario">
+            <a href="#glossario">Glossário</a>
+          </li>
+
+          <li class="desafios_formulario">
+            <a href="#formulario">Formulário de contato</a>
+          </li>
+
+          <li class="desafios_compras">
+            <a href="#compras">Lista de compras</a>
+          </li>
+
+          <li class="desafios_quiz">
+            <a href="#quiz">Quiz</a>
+          </li>
+
+          <li class="desafios_post">
+            <a href="#post">Blog Post</a>
+          </li>
+        </ol>
+      </nav>
+
+      <br />
+      <hr />
+
+      <!-- Glossário -->
+      <section>
+        <header>
+          <h2 id="glossario">Glossário</h2>
+        </header>
+
+        <nav>
+          <dl>
+            <dt>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Glossary/Doctype"
+                target="_blank"
+                >!DOCTYPE html</a
+              >
+            </dt>
+            <dd>Define o tipo de documento como HTML5.</dd>
+
+            <dt>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html"
+                target="_blank"
+                >html</a
+              >
+            </dt>
+            <dd>Define um documento HTML.</dd>
+
+            <dt>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Glossary/Doctype"
+                target="_blank"
+                >head</a
+              >
+            </dt>
+            <dd>
+              Container para metadados, título da página no navegador, links
+              etc.
+            </dd>
+
+            <dt>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Glossary/Doctype"
+                target="_blank"
+                >body</a
+              >
+            </dt>
+            <dd>Corpo do documento.</dd>
+          </dl>
+        </nav>
+      </section>
+
+      <hr />
+
+      <!-- Formulário de contato -->
+      <section>
+        <header>
+          <h2 id="formulario">Formulário de contato</h2>
+        </header>
+
+        <form action="" method="get" id="formulario">
+          <fieldset>
+            <legend>Entre em contato</legend>
+
+            <br />
+
+            <label for="selecao-assunto"><b>Assunto:</b></label>
+            <select name="assunto" id="selecao-assunto" required>
+              <option value="">Selecione o assunto</option>
+              <option value="suporte">Suporte</option>
+              <option value="sugestao">Sugestão</option>
+              <option value="reclamacao">Reclamação</option>
+            </select>
+
+            <br /><br />
+
+            <label for="nome-completo"><b>Nome completo:</b></label>
+            <br />
+            <input
+              type="text"
+              name="nome-completo"
+              id="nome-completo"
+              autocomplete="name"
+              required
+              placeholder="Digite seu nome"
+            />
+
+            <br /><br />
+
+            <label for="email"><b>Email:</b></label>
+            <br />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              autocomplete="email"
+              required
+              placeholder="Digite seu email"
+            />
+
+            <br /><br />
+
+            <label for="mensagem"><b>Mensagem:</b></label>
+            <br />
+            <textarea
+              name="mensagem"
+              id="mensagem"
+              cols="30"
+              rows="10"
+              required
+            ></textarea>
+
+            <br /><br />
+
+            <input type="checkbox" name="subscribed" id="subscribed" />
+            <label for="subscribed">Aceito receber novidades por email</label>
+
+            <br /><br />
+
+            <button type="submit" form="formulario">Enviar</button>
+          </fieldset>
+        </form>
+      </section>
+
+      <br />
+      <hr />
+
+      <!-- Lista de compras -->
+      <section>
+        <header>
+          <h2 id="compras">Lista de compras</h2>
+        </header>
+
+        <input type="checkbox" name="item1" id="item1" checked />
+        <label for="item1">Ovos</label>
+
+        <br />
+
+        <input type="checkbox" name="item2" id="item2" />
+        <label for="item2">Leite</label>
+
+        <br />
+
+        <input type="checkbox" name="item3" id="item3" />
+        <label for="item3">Arroz</label>
+
+        <br />
+
+        <input type="checkbox" name="item4" id="item4" />
+        <label for="item4">Suco de laranja</label>
+
+        <br />
+
+        <input type="checkbox" name="item5" id="item5" />
+        <label for="item5">Banana</label>
+      </section>
+
+      <br />
+      <hr />
+
+      <!-- Quiz -->
+      <section>
+        <header>
+          <h2 id="quiz">Quiz</h2>
+        </header>
+
+        <form action="" method="get" id="quiz">
+          <ol>
+            <li>
+              <h3>Pergunta 1</h3>
+              <div>
+                <input
+                  type="radio"
+                  name="pergunta-1"
+                  id="pergunta-1-a"
+                  value="A"
+                />
+                <label for="pergunta-1-a">Opção 1</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="pergunta-1"
+                  id="pergunta-1-b"
+                  value="B"
+                />
+                <label for="pergunta-1-b">Opção 2</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="pergunta-1"
+                  id="pergunta-1-c"
+                  value="C"
+                />
+                <label for="pergunta-1-c">Opção 3</label>
+                <div>
+                  <input
+                    type="radio"
+                    name="pergunta-1"
+                    id="pergunta-1-d"
+                    value="D"
+                  />
+                  <label for="pergunta-1-d">Opção 4</label>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <h3>Pergunta 2</h3>
+              <div>
+                <input
+                  type="radio"
+                  name="pergunta-2"
+                  id="pergunta-2-a"
+                  value="A"
+                />
+                <label for="pergunta-2-a">Opção 1</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="pergunta-2"
+                  id="pergunta-2-b"
+                  value="B"
+                />
+                <label for="pergunta-2-b">Opção 2</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="pergunta-2"
+                  id="pergunta-2-c"
+                  value="C"
+                />
+                <label for="pergunta-2-c">Opção 3</label>
+                <div>
+                  <input
+                    type="radio"
+                    name="pergunta-2"
+                    id="pergunta-2-d"
+                    value="D"
+                  />
+                  <label for="pergunta-2-d">Opção 4</label>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <h3>Pergunta 3</h3>
+              <div>
+                <input
+                  type="radio"
+                  name="pergunta-3"
+                  id="pergunta-3-a"
+                  value="A"
+                />
+                <label for="pergunta-3-a">Opção 1</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="pergunta-3"
+                  id="pergunta-3-b"
+                  value="B"
+                />
+                <label for="pergunta-3-b">Opção 2</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="pergunta-3"
+                  id="pergunta-3-c"
+                  value="C"
+                />
+                <label for="pergunta-3-c">Opção 3</label>
+                <div>
+                  <input
+                    type="radio"
+                    name="pergunta-3"
+                    id="pergunta-3-d"
+                    value="D"
+                  />
+                  <label for="pergunta-3-d">Opção 4</label>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <h3>Pergunta 4</h3>
+              <div>
+                <input
+                  type="radio"
+                  name="pergunta-4"
+                  id="pergunta-4-a"
+                  value="A"
+                />
+                <label for="pergunta-4-a">Opção 1</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="pergunta-4"
+                  id="pergunta-4-b"
+                  value="B"
+                />
+                <label for="pergunta-4-b">Opção 2</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="pergunta-4"
+                  id="pergunta-4-c"
+                  value="C"
+                />
+                <label for="pergunta-4-c">Opção 3</label>
+                <div>
+                  <input
+                    type="radio"
+                    name="pergunta-4"
+                    id="pergunta-4-d"
+                    value="D"
+                  />
+                  <label for="pergunta-4-d">Opção 4</label>
+                </div>
+              </div>
+            </li>
+          </ol>
+
+          <button type="submit" form="quiz">Enviar</button>
+        </form>
+      </section>
+
+      <hr />
+
+      <!-- Blog Post -->
+      <section>
+        <header>
+          <h2 id="post">Blog Post</h2>
+          <h3><b>Meu blog</b></h3>
+          <nav>
+            <ul>
+              <li>
+                <a href="#">Início</a>
+                <a href="#">Sobre</a>
+                <a href="#">Contato</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+
+        <article>
+          <h4>Título do post</h4>
+          <img
+            src="./images/image-blog.jpeg"
+            alt="Foto do corpo de uma mulher. Ela está vestindo uma camisa marrom claro, com uma calça bege, e está apoiando a mão esquerda no joelho. Na mão direita, segura um objeto marrom e comprido, com uma ponta em formato de folha."
+            width="450"
+            height="300"
+          />
+          <blockquote cite="https://www.rotamaxima.com/frases-de-steve-jobs/">
+            <p>
+              <i>"Esse tem sido um dos meus mantras – foco e simplicidade."</i>
+            </p>
+            <p>Steve Jobs</p>
+          </blockquote>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
+            similique reprehenderit. Delectus obcaecati accusantium asperiores
+            repellat fugiat consectetur, quod sunt dignissimos eius numquam quis
+            nihil maiores corrupti consequuntur distinctio corporis.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+            expedita earum labore reiciendis laboriosam harum rerum porro fugit
+            possimus dolores, inventore laborum doloremque suscipit ducimus
+            corporis quae eveniet fugiat consequuntur?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+            reiciendis aperiam minima nesciunt quae totam recusandae sequi
+            soluta at culpa eaque, facere quo id hic voluptatum! Repudiandae ea
+            error doloremque?
+          </p>
+
+          <br />
+
+          <aside>
+            <p><b>Data:</b> 29.03.2022</p>
+            <p><b>por:</b> Bibiana Falkenbach</p>
+            <p>
+              <b>Sobre a autora:</b> Bibiana é Desenvolvedora Front End em
+              formação. Ela estuda atualmente pela Rocketseat.
+            </p>
+          </aside>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
